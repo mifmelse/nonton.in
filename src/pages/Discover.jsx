@@ -32,7 +32,7 @@ const Discover = () => {
     return (
         <div>
             <div className='flex flex-col pt-16 pb-10 bg-gradient-to-br from-gray-600 from-10% to-black to-80% min-h-screen'>
-                <h1 className='mx-auto mt-4 text-2xl font-bold text-center px-4 text-white'>Menampilkan {media !=="tv"? 'movie' : 'series' } halaman: {page}</h1>
+                <h1 className='mx-auto mt-4 text-2xl font-bold text-center px-4 text-white'>Menampilkan daftar {media !=="tv"? 'movie' : 'series' } halaman {page}</h1>
                 <div className="mt-8 flex flex-wrap justify-center gap-4 lg:gap-8 max-w-[87rem] self-center">
                     {discover.map(item =>(
                         <Card key={item.id} data={item}/>

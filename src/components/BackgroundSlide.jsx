@@ -1,19 +1,23 @@
 // bg-image
-// import bgDark from '../assets/img/bg/main.jpg'
-// import bgPattern from '../assets/img/bg/bgPattern.jpg'
+import bg1 from '../assets/img/bg/bgSlide1.jpeg'
+import bg3 from '../assets/img/bg/bgSlide3.jpeg'
+import bg4 from '../assets/img/bg/bgSlide4.jpeg'
+import bg5 from '../assets/img/bg/bgSlide5.jpeg'
+import bg6 from '../assets/img/bg/bgSlide6.jpeg'
+import bg7 from '../assets/img/bg/bgSlide7.jpeg'
 
 import { useState } from "react"
 
 const BackgroundSlide = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
-    const BgSlider = ['https://source.unsplash.com/1000x600?movie', 'https://source.unsplash.com/1000x600?cinema']
+    const BgSlider = [bg1, bg3, bg4, bg5, bg6, bg7]
 
     console.log(currentIndex);
     
     useState(()=>{
         setInterval(() => {
             setCurrentIndex(current => (current + 1) % BgSlider.length)
-        }, 20000);
+        }, 5000);
     },[currentIndex])
     
     return (

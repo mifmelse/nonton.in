@@ -28,7 +28,7 @@ const AllMoviePage = () => {
     return (
         <div>
             <div className='flex flex-col pt-16 pb-10 bg-gradient-to-br from-yellow-700 from-10% via-red-600 via-40% to-black to-80% min-h-screen'>
-                <h1 className='mx-auto mt-4 text-2xl font-bold text-center px-4 text-white'>Menampilkan halaman: {page}</h1>
+                <h1 className='mx-auto mt-4 text-2xl font-bold text-center px-4 text-white'>Halaman {page}</h1>
                 <div className="mt-8 flex flex-wrap justify-center gap-4 lg:gap-8 max-w-[87rem] self-center">
                     {trending.map(item =>(
                         <Card key={item.id} data={item}/>
